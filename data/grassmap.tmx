@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<map version="0.99b" orientation="orthogonal" width="10" height="10" tilewidth="34" tileheight="34">
+ <tileset name="grass" firstgid="1" tilewidth="34" tileheight="34">
+  <image source="grass.png"/>
+ </tileset>
+ <tileset name="rocks" firstgid="10" tilewidth="34" tileheight="34">
+  <image source="rocks.png"/>
+  <tile id="0">
+   <properties>
+    <property name="blocked" value="true"/>
+   </properties>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="blocked" value="true"/>
+   </properties>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="blocked" value="true"/>
+   </properties>
+  </tile>
+  <tile id="3">
+   <properties>
+    <property name="blocked" value="true"/>
+   </properties>
+  </tile>
+  <tile id="4">
+   <properties>
+    <property name="blocked" value="true"/>
+   </properties>
+  </tile>
+  <tile id="5">
+   <properties>
+    <property name="blocked" value="true"/>
+   </properties>
+  </tile>
+  <tile id="6">
+   <properties>
+    <property name="blocked" value="true"/>
+   </properties>
+  </tile>
+  <tile id="7">
+   <properties>
+    <property name="blocked" value="true"/>
+   </properties>
+  </tile>
+  <tile id="8">
+   <properties>
+    <property name="blocked" value="true"/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer name="Layer 0" width="10" height="10">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAAONiYGDgIhKzAjEblMaG0dWhY3R17FBxdiR5ZLXI6tjR9LPiUcdGQB0rieqQ7calDh8mNnxBGAAqNB+OkAEAAA==
+  </data>
+ </layer>
+</map>

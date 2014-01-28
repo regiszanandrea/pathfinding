@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
+<map version="1.0" orientation="orthogonal" width="21" height="21" tilewidth="34" tileheight="34">
+ <tileset name="grass" firstgid="1" tilewidth="34" tileheight="34">
+  <image source="grass.png"/>
+ </tileset>
+ <tileset name="rocks" firstgid="10" tilewidth="34" tileheight="34">
+  <image source="rocks.png"/>
+  <tile id="0">
+   <properties>
+    <property name="blocked" value="true"/>
+   </properties>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="blocked" value="true"/>
+   </properties>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="blocked" value="true"/>
+   </properties>
+  </tile>
+  <tile id="3">
+   <properties>
+    <property name="blocked" value="true"/>
+   </properties>
+  </tile>
+  <tile id="4">
+   <properties>
+    <property name="blocked" value="true"/>
+   </properties>
+  </tile>
+  <tile id="5">
+   <properties>
+    <property name="blocked" value="true"/>
+   </properties>
+  </tile>
+  <tile id="6">
+   <properties>
+    <property name="blocked" value="true"/>
+   </properties>
+  </tile>
+  <tile id="7">
+   <properties>
+    <property name="blocked" value="true"/>
+   </properties>
+  </tile>
+  <tile id="8">
+   <properties>
+    <property name="blocked" value="true"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset name="objeto" firstgid="19" tilewidth="34" tileheight="34">
+  <image source="hierba1.png" trans="ff00ff"/>
+ </tileset>
+ <tileset name="suelo" firstgid="20" tilewidth="34" tileheight="34">
+  <image source="suelo1.png"/>
+ </tileset>
+ <!-- Layer data is compressed (GZip) binary data, encoded in Base64 -->
+ <layer name="Layer 0" width="21" height="21">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAAO3SwQrAIAwD0E7oBv7/B4s3kSYN9ugKuQg+Qmk3s17MPvPtEXNivsRrIGpPD/yK6ck+TntGb424qumk6+5G5vz/JcbqqOYa5a6yfaKwm2T3aWIvFDQVE7m/ead56wz9iayn5AYAAA==
+  </data>
+ </layer>
+ <layer name="Capa 1" width="21" height="21">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAAGNgoByIoGFqgFEzR80cSmZyk6hfGAseNXPUTFLNxGYeNdxJCPDgMZMHDZNiJj7MDcWE1KFjAOvZsdnkBgAA
+  </data>
+ </layer>
+</map>

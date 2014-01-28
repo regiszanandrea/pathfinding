@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="30" height="30" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="tilea2" tilewidth="32" tileheight="32">
+  <image source="tilea2.png" trans="ff00ff" width="512" height="384"/>
+ </tileset>
+ <layer name="Camada de Tiles 1" width="30" height="30">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NkYGBgHCDMOoB2j+JRPIppjwuBuGgA7G0E4qZB4P9RPIpH8fDAxUBcMgD2NgNxywD7fbQcHxo4iQhMbTsNgdiYCGw0TOwdzhgAnmG6YBAOAAA=
+  </data>
+ </layer>
+ <layer name="Objetos" width="30" height="30">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACzNnYGAwHyBMCBCjhhQwai9+ddSMN1r4ZdTeoWUvKW4btXfU3oG2lxplHzn2UhOM2kt7eweqHiTWLErspSTd0yJ+R+0dtXek2jsQGADyqBkBEA4AAA==
+  </data>
+ </layer>
+</map>

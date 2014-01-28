@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="30" height="30" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="tilea2" tilewidth="32" tileheight="32">
+  <image source="tilea2.png" width="512" height="384"/>
+ </tileset>
+ <layer name="Camada de Tiles 1" width="30" height="30">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC8WSUQ7AIAhDve3uf4P9LgQKpeBI/FCE16Ln/BfP5ZVxM01R3p5bjre/4Y/lTuliuChYjRHXq8n623yHOzFjpMPjoui8oVff6Tfx11huV6Ot+3LtHDa9R9zKWyn3Ga7qe5OLejFcmzvJPfRfFb9VLuJMzln1iyLjZvcj7saKeitcRS/ibs9hWnel3wa38i6ozjtXNE76neAyvqvzRCzFL1M7yVXn/Ee8Ul77TBAOAAA=
+  </data>
+ </layer>
+ <layer name="Objetos" width="30" height="30">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC8WW3Q3DMAiEPZZXTTZoN2ina14qIcQBB058Eg+xsT8g/jvHGOcme1oR9wjGo37d/rrs7XBnwKnqc9m3wY3yz4rhTseQP8u18orm12MqXG/+rLS//La4bD09Lhq/Yv9W1hrLra5nPU5yp+NXnR8JcbXY/x35M1xGlv+d3H+du1w9jz7fUVzWf+jkq893xNVtR5Ob7WfzrZ5VGf/V55UntJ873M5d7HFX3fEsNyNrX2Xi7XLRvrIk42HrfNf76ilJbvYtHAn5y7XQzZeJSa6F3XXeYT/6B0bUEA4AAA==
+  </data>
+ </layer>
+</map>
