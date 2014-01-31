@@ -14,21 +14,21 @@ import org.newdawn.slick.tiled.TiledMap;
 
 public class Game extends BasicGame 
 {
-	Sound back;
+	private Sound back;
 	private TiledMap map;
 	private Animation sprite, up, down, left, right;
 	private int x,y,nx = 0, nMap;
-	private int[][] board = new int[30][30];
+	private int[][] board = new int[30][30]; // Tabuleiro 30x30
 	
-	ArrayList<Node> path = new ArrayList<Node>();
-	//private ArrayList<ArrayList<Integer>> n = new ArrayList<ArrayList<Integer>>();
+	private ArrayList<Node> path = new ArrayList<Node>();
+	
 	@Override
 	public void render(GameContainer gc, Graphics g) throws SlickException {
-		map.render(0, 0);
+		map.render(0, 0); // Renderização do mapa
 		gc.setShowFPS(false);
 		
 		int objectLayer = map.getLayerIndex("Objetos");
-		
+		// Acha todos os obstaculos de acordo com o mapa
 		for (int i = 0; i < 30; i++) {
 			for (int j = 0; j < 30; j++) {
 				if(map.getTileId(j,i,objectLayer) == 0){
@@ -37,8 +37,7 @@ public class Game extends BasicGame
 					board[i][j] = 1;
 				}				
 			}
-		}
-		//g.fillRect(x*32, y*32, 32, 32);
+		}		
 		sprite.draw(x*32, y*32);
 	}
  
@@ -48,12 +47,12 @@ public class Game extends BasicGame
 		map.getTileId(0, 0, objectLayer);
 		Input in = gc.getInput();
 	
-		
+		// Pega evento do mouse
 		if(in.isMousePressed(Input.MOUSE_LEFT_BUTTON)){
-			if(map.getTileId(in.getMouseX()/32,in.getMouseY()/32,objectLayer) == 0){				
+			if(map.getTileId(in.getMouseX()/32,in.getMouseY()/32,objectLayer) == 0){ // Verifica se é não é um obstaculo.				
 				nx=0;
 				path.clear();
-				path = new Main().Astar(new int[]{y, x},new int[]{in.getMouseY()/32, in.getMouseX()/32}, board);									
+				path = new Astar().run(new int[]{y, x},new int[]{in.getMouseY()/32, in.getMouseX()/32}, board); // Executa o A* da posição atual até aonde o usuario clicou									
 			}
 		}
 		
@@ -65,7 +64,7 @@ public class Game extends BasicGame
 					return;
 				}
 			}
-			
+			// movimentação do personagem
 			if(x + 1 == path.get(nx).y ){				              
 				sprite = right;		           
                 sprite.update(t);
@@ -81,12 +80,9 @@ public class Game extends BasicGame
 			}
 			x = path.get(nx).y;
 			y = path.get(nx).x;
-		}
-//		if(map.getTileId(x,y,objectLayer) == 0){
-//			x++;
-//		}
-		
+		}		
 	}
+	// Função para verificar se a posição atual não é um EasterEgg. Se for é mudado o mapa do jogo.
 	public boolean isEasterEgg() throws SlickException{
 		if(nMap == 0){
 			if(x == 20 && y == 20 ){								
@@ -125,14 +121,14 @@ public class Game extends BasicGame
 				return true;
 			}
 		}else {
-			if(x == 28 && y == 28){
-				// Game over
+			if(x == 28 && y == 28){				
+				System.exit(1);
 			}
 		}
 		return false;
 		
 	}
- 
+	// Inicialição do jogo
 	@Override
 	public void init(GameContainer gc) throws SlickException {
 		map = new TiledMap("res/mapa.tmx");
@@ -144,18 +140,21 @@ public class Game extends BasicGame
 		nMap = 0 ; // Numero do mapa
 		x = 1;
 		y = 1;
+		
+		// Sprite
 		Image [] movementUp = {new Image("res/wmg1_bk1.png"), new Image("res/wmg1_bk2.png")};
         Image [] movementDown = {new Image("res/wmg1_fr1.png"), new Image("res/wmg1_fr2.png")};
         Image [] movementLeft = {new Image("res/wmg1_lf1.png"), new Image("res/wmg1_lf2.png")};
         Image [] movementRight = {new Image("res/wmg1_rt1.png"), new Image("res/wmg1_rt2.png")};      
         int [] duration = {100, 100};
         
+        // Animaçoes
         up = new Animation(movementUp, duration, false);
         down = new Animation(movementDown, duration, false);
         left = new Animation(movementLeft, duration, false);
         right = new Animation(movementRight, duration, false);
         
-        sprite = right;
+        sprite = down;
         
 		
 	}
