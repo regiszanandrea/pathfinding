@@ -55,6 +55,30 @@ public class Game extends BasicGame
 				path = new Astar().run(new int[]{y, x},new int[]{in.getMouseY()/32, in.getMouseX()/32}, board); // Executa o A* da posição atual até aonde o usuario clicou									
 			}
 		}
+		if(in.isKeyPressed(Input.KEY_DOWN)){
+			sprite = down;	
+			if(map.getTileId(x,y+1,objectLayer) == 0){
+				y++;
+			}
+		}
+		if(in.isKeyPressed(Input.KEY_LEFT)){
+			sprite = left;
+			if(map.getTileId(x-1,y,objectLayer) == 0){
+				x--;
+			}
+		}
+		if(in.isKeyPressed(Input.KEY_UP)){
+			sprite = up;	
+			if(map.getTileId(x,y-1,objectLayer) == 0){
+				y--;
+			}
+		}
+		if(in.isKeyPressed(Input.KEY_RIGHT)){
+			sprite = right;
+			if(map.getTileId(x+1,y,objectLayer) == 0){
+				x++;
+			}
+		}
 		
 		if(path.size() != 0){			
 			if(nx < path.size()-1){ 

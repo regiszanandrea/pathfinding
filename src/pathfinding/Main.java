@@ -16,7 +16,7 @@ public class Main {
 				AppGameContainer app = new AppGameContainer( new Game() );
 				// Tamanho da tela: 960x960
 				app.setDisplayMode(960, 960, false);
-				app.setTargetFrameRate(2); // Seta o frame rate para 2 para não ser tão rapido
+				app.setTargetFrameRate(3); // Seta o frame rate para 2 para não ser tão rapido
 				app.start();
 				
 			} catch (SlickException e) {

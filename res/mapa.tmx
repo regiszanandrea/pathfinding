@@ -5,12 +5,12 @@
  </tileset>
  <layer name="Camada de Tiles 1" width="30" height="30">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC2NkYGBgHCDMOoB2j+JRPIppjwuBuGgA7G0E4qZB4P9RPIpH8fDAxUBcMgD2NgNxywD7fbQcHxo4iQhMbTsNgdiYCGw0TOwdzhgAnmG6YBAOAAA=
+   H4sIAAAAAAAAC2NkYGBgHCDMOoB2D1acOAjcMFTcOFjcMepX3LgQiIsGwN5GIG4aBP4fCXE8GkaDG4+GGXVwMRCXDIC9zUDcMhqXo3iQYkMgNiYCGw0Te4czBgDOcfnfEA4AAA==
   </data>
  </layer>
  <layer name="Objetos" width="30" height="30">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAACzNnYGAwHyBMCBCjhhQwai9+ddSMN1r4ZdTeoWUvKW4btXfU3oG2lxplHzn2UhOM2kt7eweqHiTWLErspSTd0yJ+R+0dtXek2jsQGADyqBkBEA4AAA==
+   H4sIAAAAAAAAC+2VSRLAIAgE+ZX//1nuKVmG0RAXqrgNtChgE5FW5J5FNIidzLXun3k3T9fTZ2vx8uzM1TQzegbhWvUiZ/sLl+lnltvTROf3HcPMY2ZfaXqNq2lH70mEi+w+tF7mH0TyrLI3VuYifTqaG9VletqKRbhf2+Ve7o7cCn8AfA03iBAOAAA=
   </data>
  </layer>
 </map>
