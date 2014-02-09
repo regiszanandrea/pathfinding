@@ -9,6 +9,8 @@ O trabalho foi desenvolvido em Java utilizando a biblioteca gráfica Slick2d, qu
 
 A maior dificuldade encontrada foi vincular o caminho gerado pelo A* ao mapa, onde foi preciso fazer calculos para ajustar a posição do personagem no mapa.  
 
+Para construção dos mapas foi usado o programa Tiled: mapeditor.org , onde é extremamente fácil de montar mapas 2d para jogos.
+
 Execução
 ===========
 
@@ -22,4 +24,4 @@ Para executar o jogo siga os passos abaixo:<br />
 EasterEggs
 ===========
 
-O jogo possui eastereggs pelo mapa, quando um for achado, o usuário será "transportado" para um novo mapa, onde também terá outros easteeggs. Para saber onde está todos, basta olhar a função isEasterEgg (linha 86) no arquivo Game.java .
+O jogo possui eastereggs pelo mapa, quando um for achado, o usuário será "transportado" para um novo mapa, onde também terá outros easteeggs. Para saber onde está todos, basta olhar a função isEasterEgg (linha 109) no arquivo Game.java .
